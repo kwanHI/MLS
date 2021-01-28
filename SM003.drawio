@@ -1,4 +1,190 @@
-<mxfile host="app.diagrams.net" modified="2021-01-27T23:43:58.697Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" etag="jK0kgmQSqMwTBdRij8BJ" version="14.2.7" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-01-28T03:47:51.273Z" agent="5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36" etag="vQwlK-GopFxqsFsxrx96" version="14.2.7" type="github" pages="4">
+  <diagram id="OXRTI_JjFTglDBbpKFL7" name="ProcessFlow">
+    <mxGraphModel dx="524" dy="505" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="ufRVP3LbtriHCwfugov7-0" />
+        <mxCell id="ufRVP3LbtriHCwfugov7-1" parent="ufRVP3LbtriHCwfugov7-0" />
+        <mxCell id="ufRVP3LbtriHCwfugov7-2" value="Excel -&amp;gt; CSV" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.multi-document;whiteSpace=wrap;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
+          <mxGeometry x="50" y="50" width="88" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ufRVP3LbtriHCwfugov7-3" value="Constellation.csv&lt;br&gt;Satellite.csv&lt;br&gt;Sensor.csv" style="shape=internalStorage;whiteSpace=wrap;html=1;dx=15;dy=15;rounded=1;arcSize=8;strokeWidth=2;align=left;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
+          <mxGeometry x="200" y="50" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ufRVP3LbtriHCwfugov7-4" value="ConstComp.csv" style="shape=internalStorage;whiteSpace=wrap;html=1;dx=15;dy=15;rounded=1;arcSize=8;strokeWidth=2;align=left;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
+          <mxGeometry x="200" y="130" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ufRVP3LbtriHCwfugov7-5" value="Supplier Matrix" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;align=center;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
+          <mxGeometry x="645" y="260" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ufRVP3LbtriHCwfugov7-6" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=2;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;align=left;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
+          <mxGeometry x="310" y="60" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ufRVP3LbtriHCwfugov7-7" value="Python Script to go generate 3 sql files" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;align=left;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
+          <mxGeometry x="440" y="65" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ufRVP3LbtriHCwfugov7-8" value="SQL files" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;align=left;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
+          <mxGeometry x="440" y="150" width="55" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="ufRVP3LbtriHCwfugov7-9" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=2;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;align=left;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
+          <mxGeometry x="530" y="260" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ufRVP3LbtriHCwfugov7-10" value="SQL files" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;align=left;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
+          <mxGeometry x="462.5" y="160" width="55" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="ufRVP3LbtriHCwfugov7-11" value="SQL files" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;align=left;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
+          <mxGeometry x="485" y="170" width="55" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="ufRVP3LbtriHCwfugov7-12" value="&lt;br&gt;Logic&lt;br&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;1)Check and Extract Constellation&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;2)Walk Each column to identify Field data set to generate 2nd SQL&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;3) Walk Each column to generate 3rd SQL file for List data set&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
+          <mxGeometry x="550" y="55" width="260" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ufRVP3LbtriHCwfugov7-14" value="Generate 3 Functions embedded in Supplier Matrix DB" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;align=center;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
+          <mxGeometry x="700" y="310" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ufRVP3LbtriHCwfugov7-15" value="&lt;h1 style=&quot;font-size: 16px&quot;&gt;1) Function: u_Capability_ins(name,catid,oid,tbl)&lt;/h1&gt;&lt;p&gt;Check whether Constellation/Satellite/Sensor&lt;/p&gt;&lt;p&gt;Check if already exists in Capability then ignore else insert into Capability and CapabilityType&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
+          <mxGeometry x="40" y="270" width="410" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ufRVP3LbtriHCwfugov7-16" value="&lt;h1 style=&quot;font-size: 16px&quot;&gt;2) Function: u_CapabilityMatrix_ins(pnm,pid,snm,sid)&lt;/h1&gt;&lt;p&gt;Check whether the pair of capabilities (constellation-satellite or satellite-sensor) exists, if not Insert into CapabilityMatrix by inserting both ways or 2 rows per pair e.g.&amp;nbsp;&lt;span&gt;Constellation:Satellite, and Satellite:Constellation&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
+          <mxGeometry x="40" y="370" width="480" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="ufRVP3LbtriHCwfugov7-17" value="&lt;h1 style=&quot;font-size: 16px&quot;&gt;3) Function: u_CapabilityFieldList_upsert(capnm,capid,fid,val,tbl,isD)&lt;/h1&gt;&lt;p&gt;Check if isD=1, delete, else upsert&lt;/p&gt;&lt;p&gt;Check tbl = CapabilityFieldValue or CapabilityListValue for either deletion or upsert&lt;/p&gt;&lt;p&gt;Check by retrieving capabiityId from capabilityName +categoryId if exist for the fieldID then update, else Insert&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
+          <mxGeometry x="40" y="461" width="490" height="159" as="geometry" />
+        </mxCell>
+        <mxCell id="ufRVP3LbtriHCwfugov7-18" value="ConstSat.csv" style="shape=internalStorage;whiteSpace=wrap;html=1;dx=15;dy=15;rounded=1;arcSize=8;strokeWidth=2;align=left;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
+          <mxGeometry x="110" y="130" width="70" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="6Th8p7CxwzULDHE4yQiV" name="Constellation">
+    <mxGraphModel dx="524" dy="505" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-0" />
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-1" parent="HB2j1pDYlEqK0yUvqq6Y-0" />
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-2" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;exitX=0.45;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="HB2j1pDYlEqK0yUvqq6Y-1" source="HB2j1pDYlEqK0yUvqq6Y-17" target="HB2j1pDYlEqK0yUvqq6Y-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-3" value="Const + Company + SM_ID where Primary" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
+          <mxGeometry x="20" y="220" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-4" value="Yes" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="HB2j1pDYlEqK0yUvqq6Y-1" source="HB2j1pDYlEqK0yUvqq6Y-7" target="HB2j1pDYlEqK0yUvqq6Y-12">
+          <mxGeometry y="20" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-5" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;" edge="1" parent="HB2j1pDYlEqK0yUvqq6Y-1" source="HB2j1pDYlEqK0yUvqq6Y-7" target="HB2j1pDYlEqK0yUvqq6Y-9">
+          <mxGeometry y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="HB2j1pDYlEqK0yUvqq6Y-1" source="HB2j1pDYlEqK0yUvqq6Y-3" target="HB2j1pDYlEqK0yUvqq6Y-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="80" y="335" />
+              <mxPoint x="170" y="335" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-7" value="Is in CapabilityType" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
+          <mxGeometry x="164" y="170" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="HB2j1pDYlEqK0yUvqq6Y-1" source="HB2j1pDYlEqK0yUvqq6Y-9" target="HB2j1pDYlEqK0yUvqq6Y-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-9" value="CapabilityName, 80&amp;nbsp;&lt;br&gt;*TypeId=80, Name=Constellation" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
+          <mxGeometry x="320" y="190" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-10" value="No" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="HB2j1pDYlEqK0yUvqq6Y-1" source="HB2j1pDYlEqK0yUvqq6Y-12" target="HB2j1pDYlEqK0yUvqq6Y-13">
+          <mxGeometry x="0.3333" y="20" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-11" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;" edge="1" parent="HB2j1pDYlEqK0yUvqq6Y-1" source="HB2j1pDYlEqK0yUvqq6Y-12" target="HB2j1pDYlEqK0yUvqq6Y-15">
+          <mxGeometry y="10" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-12" value="Match by Constellation Name?" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
+          <mxGeometry x="164" y="290" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-13" value="Log" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
+          <mxGeometry x="40" y="380" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="HB2j1pDYlEqK0yUvqq6Y-1" source="HB2j1pDYlEqK0yUvqq6Y-15" target="HB2j1pDYlEqK0yUvqq6Y-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-15" value="u_capability_ins&lt;br&gt;Insert to Capability with CapabilityName, SM_ID" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
+          <mxGeometry x="320" y="297" width="140" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-16" value="Constellation .csv" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
+          <mxGeometry x="170" y="54" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-17" value="Constellation (Name)" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
+          <mxGeometry x="160" y="90" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-18" value="u_capability_ins" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
+          <mxGeometry x="360" y="160" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-19" value="constcomp.csv" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
+          <mxGeometry x="30" y="190" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-20" value="u_capabilityFieldList_upsert&lt;br&gt;With last parameter (0)&lt;br&gt;:upsert" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
+          <mxGeometry x="430" y="620" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-21" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.207;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="HB2j1pDYlEqK0yUvqq6Y-1" source="HB2j1pDYlEqK0yUvqq6Y-23" target="HB2j1pDYlEqK0yUvqq6Y-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-22" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="HB2j1pDYlEqK0yUvqq6Y-1" source="HB2j1pDYlEqK0yUvqq6Y-23" target="HB2j1pDYlEqK0yUvqq6Y-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="558" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-23" value="Is Each Column Empty/NaN?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
+          <mxGeometry x="513" y="500" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-24" value="u_capabilityFieldList_upsert&lt;br&gt;With last parameter (1)&lt;br&gt;:delete" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
+          <mxGeometry x="590" y="620" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="HB2j1pDYlEqK0yUvqq6Y-1" source="HB2j1pDYlEqK0yUvqq6Y-28" target="HB2j1pDYlEqK0yUvqq6Y-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="HB2j1pDYlEqK0yUvqq6Y-1" source="HB2j1pDYlEqK0yUvqq6Y-28" target="HB2j1pDYlEqK0yUvqq6Y-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-27" value="u_capabilityFieldList_upsert&lt;br&gt;(&#39;Field&#39;)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HB2j1pDYlEqK0yUvqq6Y-26">
+          <mxGeometry x="-0.2167" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-28" value="Each Column&amp;nbsp; List or Field?" style="rhombus;whiteSpace=wrap;html=1;rounded=1;shadow=0;strokeWidth=1;glass=0;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
+          <mxGeometry x="360" y="380" width="110" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-29" value="u_capabilityFieldList_upsert:(&#39;List&#39;)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
+          <mxGeometry x="513" y="410" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-30" value="u_capabilityFieldList_upsert&lt;br&gt;With last parameter (0)&lt;br&gt;:upsert" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
+          <mxGeometry x="90" y="620" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-31" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.207;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="HB2j1pDYlEqK0yUvqq6Y-1" source="HB2j1pDYlEqK0yUvqq6Y-33" target="HB2j1pDYlEqK0yUvqq6Y-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="125" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-32" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="HB2j1pDYlEqK0yUvqq6Y-1" source="HB2j1pDYlEqK0yUvqq6Y-33" target="HB2j1pDYlEqK0yUvqq6Y-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="598" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-33" value="Is Each Column Empty/NaN?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
+          <mxGeometry x="190" y="500" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-34" value="u_capabilityFieldList_upsert&lt;br&gt;With last parameter (1)&lt;br&gt;:delete" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
+          <mxGeometry x="260" y="625" width="150" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Satellite">
     <mxGraphModel dx="694" dy="488" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -174,194 +360,8 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="OXRTI_JjFTglDBbpKFL7" name="ProcessFlow">
-    <mxGraphModel dx="694" dy="488" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
-      <root>
-        <mxCell id="ufRVP3LbtriHCwfugov7-0" />
-        <mxCell id="ufRVP3LbtriHCwfugov7-1" parent="ufRVP3LbtriHCwfugov7-0" />
-        <mxCell id="ufRVP3LbtriHCwfugov7-2" value="Excel -&amp;gt; CSV" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.multi-document;whiteSpace=wrap;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
-          <mxGeometry x="50" y="50" width="88" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="ufRVP3LbtriHCwfugov7-3" value="Constellation.csv&lt;br&gt;Satellite.csv&lt;br&gt;Sensor.csv" style="shape=internalStorage;whiteSpace=wrap;html=1;dx=15;dy=15;rounded=1;arcSize=8;strokeWidth=2;align=left;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
-          <mxGeometry x="200" y="50" width="70" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="ufRVP3LbtriHCwfugov7-4" value="ConstComp.csv" style="shape=internalStorage;whiteSpace=wrap;html=1;dx=15;dy=15;rounded=1;arcSize=8;strokeWidth=2;align=left;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
-          <mxGeometry x="200" y="130" width="70" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="ufRVP3LbtriHCwfugov7-5" value="Supplier Matrix" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;align=center;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
-          <mxGeometry x="645" y="260" width="70" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="ufRVP3LbtriHCwfugov7-6" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=2;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;align=left;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
-          <mxGeometry x="310" y="60" width="100" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="ufRVP3LbtriHCwfugov7-7" value="Python Script to go generate 3 sql files" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.document2;whiteSpace=wrap;size=0.25;align=left;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
-          <mxGeometry x="440" y="65" width="100" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="ufRVP3LbtriHCwfugov7-8" value="SQL files" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;align=left;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
-          <mxGeometry x="440" y="150" width="55" height="75" as="geometry" />
-        </mxCell>
-        <mxCell id="ufRVP3LbtriHCwfugov7-9" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeWidth=2;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;align=left;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
-          <mxGeometry x="530" y="260" width="100" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="ufRVP3LbtriHCwfugov7-10" value="SQL files" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;align=left;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
-          <mxGeometry x="462.5" y="160" width="55" height="75" as="geometry" />
-        </mxCell>
-        <mxCell id="ufRVP3LbtriHCwfugov7-11" value="SQL files" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;align=left;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
-          <mxGeometry x="485" y="170" width="55" height="75" as="geometry" />
-        </mxCell>
-        <mxCell id="ufRVP3LbtriHCwfugov7-12" value="&lt;br&gt;Logic&lt;br&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;1)Check and Extract Constellation&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;2)Walk Each column to identify Field data set to generate 2nd SQL&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;3) Walk Each column to generate 3rd SQL file for List data set&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
-          <mxGeometry x="550" y="55" width="260" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="ufRVP3LbtriHCwfugov7-14" value="Generate 3 Functions embedded in Supplier Matrix DB" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;align=center;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
-          <mxGeometry x="700" y="310" width="120" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="ufRVP3LbtriHCwfugov7-15" value="&lt;h1 style=&quot;font-size: 16px&quot;&gt;1) Function: u_Capability_ins(name,catid,oid,tbl)&lt;/h1&gt;&lt;p&gt;Check whether Constellation/Satellite/Sensor&lt;/p&gt;&lt;p&gt;Check if already exists in Capability then ignore else insert into Capability and CapabilityType&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
-          <mxGeometry x="40" y="270" width="410" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="ufRVP3LbtriHCwfugov7-16" value="&lt;h1 style=&quot;font-size: 16px&quot;&gt;2) Function: u_CapabilityMatrix_ins(pnm,pid,snm,sid)&lt;/h1&gt;&lt;p&gt;Check whether the pair of capabilities (constellation-satellite or satellite-sensor) exists, if not Insert into CapabilityMatrix by inserting both ways or 2 rows per pair e.g.&amp;nbsp;&lt;span&gt;Constellation:Satellite, and Satellite:Constellation&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
-          <mxGeometry x="40" y="370" width="480" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="ufRVP3LbtriHCwfugov7-17" value="&lt;h1 style=&quot;font-size: 16px&quot;&gt;3) Function: u_CapabilityFieldList_upsert(capnm,capid,fid,val,tbl,isD)&lt;/h1&gt;&lt;p&gt;Check if isD=1, delete, else upsert&lt;/p&gt;&lt;p&gt;Check tbl = CapabilityFieldValue or CapabilityListValue for either deletion or upsert&lt;/p&gt;&lt;p&gt;Check by retrieving capabiityId from capabilityName +categoryId if exist for the fieldID then update, else Insert&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
-          <mxGeometry x="40" y="461" width="490" height="159" as="geometry" />
-        </mxCell>
-        <mxCell id="ufRVP3LbtriHCwfugov7-18" value="ConstSat.csv" style="shape=internalStorage;whiteSpace=wrap;html=1;dx=15;dy=15;rounded=1;arcSize=8;strokeWidth=2;align=left;" vertex="1" parent="ufRVP3LbtriHCwfugov7-1">
-          <mxGeometry x="110" y="130" width="70" height="70" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-  <diagram id="6Th8p7CxwzULDHE4yQiV" name="Constellation">
-    <mxGraphModel dx="694" dy="488" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
-      <root>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-0" />
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-1" parent="HB2j1pDYlEqK0yUvqq6Y-0" />
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-2" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;exitX=0.45;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="HB2j1pDYlEqK0yUvqq6Y-1" source="HB2j1pDYlEqK0yUvqq6Y-17" target="HB2j1pDYlEqK0yUvqq6Y-7">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-3" value="Const + Company + SM_ID where Primary" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
-          <mxGeometry x="20" y="220" width="120" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-4" value="Yes" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="HB2j1pDYlEqK0yUvqq6Y-1" source="HB2j1pDYlEqK0yUvqq6Y-7" target="HB2j1pDYlEqK0yUvqq6Y-12">
-          <mxGeometry y="20" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-5" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;" edge="1" parent="HB2j1pDYlEqK0yUvqq6Y-1" source="HB2j1pDYlEqK0yUvqq6Y-7" target="HB2j1pDYlEqK0yUvqq6Y-9">
-          <mxGeometry y="10" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="HB2j1pDYlEqK0yUvqq6Y-1" source="HB2j1pDYlEqK0yUvqq6Y-3" target="HB2j1pDYlEqK0yUvqq6Y-12">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="80" y="335" />
-              <mxPoint x="170" y="335" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-7" value="Is in CapabilityType" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
-          <mxGeometry x="164" y="170" width="100" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="HB2j1pDYlEqK0yUvqq6Y-1" source="HB2j1pDYlEqK0yUvqq6Y-9" target="HB2j1pDYlEqK0yUvqq6Y-12">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-9" value="CapabilityName, 80&amp;nbsp;&lt;br&gt;*TypeId=80, Name=Constellation" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
-          <mxGeometry x="320" y="190" width="120" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-10" value="No" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="HB2j1pDYlEqK0yUvqq6Y-1" source="HB2j1pDYlEqK0yUvqq6Y-12" target="HB2j1pDYlEqK0yUvqq6Y-13">
-          <mxGeometry x="0.3333" y="20" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-11" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;" edge="1" parent="HB2j1pDYlEqK0yUvqq6Y-1" source="HB2j1pDYlEqK0yUvqq6Y-12" target="HB2j1pDYlEqK0yUvqq6Y-15">
-          <mxGeometry y="10" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-12" value="Match by Constellation Name?" style="rhombus;whiteSpace=wrap;html=1;shadow=0;fontFamily=Helvetica;fontSize=12;align=center;strokeWidth=1;spacing=6;spacingTop=-4;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
-          <mxGeometry x="164" y="290" width="100" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-13" value="Log" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
-          <mxGeometry x="40" y="380" width="120" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="HB2j1pDYlEqK0yUvqq6Y-1" source="HB2j1pDYlEqK0yUvqq6Y-15" target="HB2j1pDYlEqK0yUvqq6Y-28">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-15" value="u_capability_ins&lt;br&gt;Insert to Capability with CapabilityName, SM_ID" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
-          <mxGeometry x="320" y="297" width="140" height="65" as="geometry" />
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-16" value="Constellation .csv" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
-          <mxGeometry x="170" y="54" width="100" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-17" value="Constellation (Name)" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
-          <mxGeometry x="160" y="90" width="120" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-18" value="u_capability_ins" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
-          <mxGeometry x="360" y="160" width="40" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-19" value="constcomp.csv" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
-          <mxGeometry x="30" y="190" width="100" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-20" value="u_capabilityFieldList_upsert&lt;br&gt;With last parameter (0)&lt;br&gt;:upsert" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
-          <mxGeometry x="430" y="620" width="150" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-21" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.207;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="HB2j1pDYlEqK0yUvqq6Y-1" source="HB2j1pDYlEqK0yUvqq6Y-23" target="HB2j1pDYlEqK0yUvqq6Y-20">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="455" y="560" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-22" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="HB2j1pDYlEqK0yUvqq6Y-1" source="HB2j1pDYlEqK0yUvqq6Y-23" target="HB2j1pDYlEqK0yUvqq6Y-24">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="700" y="558" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-23" value="Is Each Column Empty/NaN?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
-          <mxGeometry x="513" y="500" width="120" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-24" value="u_capabilityFieldList_upsert&lt;br&gt;With last parameter (1)&lt;br&gt;:delete" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
-          <mxGeometry x="590" y="620" width="150" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="HB2j1pDYlEqK0yUvqq6Y-1" source="HB2j1pDYlEqK0yUvqq6Y-28" target="HB2j1pDYlEqK0yUvqq6Y-23">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="HB2j1pDYlEqK0yUvqq6Y-1" source="HB2j1pDYlEqK0yUvqq6Y-28" target="HB2j1pDYlEqK0yUvqq6Y-33">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-27" value="u_capabilityFieldList_upsert&lt;br&gt;(&#39;Field&#39;)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HB2j1pDYlEqK0yUvqq6Y-26">
-          <mxGeometry x="-0.2167" y="-3" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-28" value="Each Column&amp;nbsp; List or Field?" style="rhombus;whiteSpace=wrap;html=1;rounded=1;shadow=0;strokeWidth=1;glass=0;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
-          <mxGeometry x="360" y="380" width="110" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-29" value="u_capabilityFieldList_upsert:(&#39;List&#39;)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
-          <mxGeometry x="513" y="410" width="80" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-30" value="u_capabilityFieldList_upsert&lt;br&gt;With last parameter (0)&lt;br&gt;:upsert" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
-          <mxGeometry x="90" y="620" width="150" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-31" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.207;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="HB2j1pDYlEqK0yUvqq6Y-1" source="HB2j1pDYlEqK0yUvqq6Y-33" target="HB2j1pDYlEqK0yUvqq6Y-30">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="125" y="600" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-32" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="HB2j1pDYlEqK0yUvqq6Y-1" source="HB2j1pDYlEqK0yUvqq6Y-33" target="HB2j1pDYlEqK0yUvqq6Y-34">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="370" y="598" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-33" value="Is Each Column Empty/NaN?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
-          <mxGeometry x="190" y="500" width="120" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="HB2j1pDYlEqK0yUvqq6Y-34" value="u_capabilityFieldList_upsert&lt;br&gt;With last parameter (1)&lt;br&gt;:delete" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="HB2j1pDYlEqK0yUvqq6Y-1">
-          <mxGeometry x="260" y="625" width="150" height="60" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
   <diagram id="HsTLzLcxkvD2ebzBOZC1" name="Sensor">
-    <mxGraphModel dx="694" dy="488" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="524" dy="505" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="lnuB83BYFsgqP9y2e3R1-0" />
         <mxCell id="lnuB83BYFsgqP9y2e3R1-1" parent="lnuB83BYFsgqP9y2e3R1-0" />
